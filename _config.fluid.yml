@@ -1,0 +1,245 @@
+# ==================================== 全局设置 ====================================
+
+## 顶部预览大图（不知道为什么，设置这个属性貌似没起到作用）
+# banner_img: 你的图片地址/链接
+
+## Hexo的网页图标
+favicon: /img/icon.png
+
+## 是否强制全局HTTPS
+force_https: true
+
+## 自定义JS
+# custom_js:
+#   ### 鼠标点击出小爱心❤
+#   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/love.js
+#   ### 鼠标跟随小星星
+#   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiaoxingxing.js
+#   ### 小雪花飘落
+#   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiaoxuehua.js
+#   ### 动态彩带
+#   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/caidai.js
+
+## 自定义CSS
+# custom_css: 
+#   ### 引入 iconfont 的图标（这是我的iconfont项目链接，最好可以换成你自己的）
+#   - //at.alicdn.com/t/c/font_3846514_kabxni94auf.css
+#   ### 鼠标指针美化
+#   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css
+#   ### 滚动条美化
+#   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/css/gundongtiao.css
+
+## 暗黑模式设置
+dark_mode:
+  enable: true
+  default: auto
+
+## 导航栏设置
+navbar:
+  ### 博客标题
+  blog_title: chen77 的博客
+  ### 导航菜单
+  menu:
+    - { key: '首页', link: '/', icon: 'iconfont icon-home-fill' }
+    - { key: '归档', link: '/archives', icon: 'iconfont icon-books' }
+    - { key: '分类', link: '/categories', icon: 'iconfont icon-th-large'}
+    - { key: '标签', link: '/tags/', icon: 'iconfont icon-tags-fill'}
+    - { key: '关于', link: '/about/', icon: 'iconfont icon-user-fill'}
+    - { key: '友链', link: '/links/', icon: 'iconfont icon-link-fill' }
+    - {
+      key: '文档',
+      icon: 'iconfont icon-book',
+      submenu: [
+        { key: '主题博客', link: 'https://hexo.fluid-dev.com/' },
+        { key: '配置指南', link: 'https://hexo.fluid-dev.com/docs/guide/' },
+        { key: '图标用法', link: 'https://hexo.fluid-dev.com/docs/icon/' }
+      ]
+    }
+
+## 关于页设置
+about:
+  ## 关于页的顶部预览图
+  banner_img: 你的图片地址/链接
+  ### 你的头像
+  avatar: /img/icon.png
+  ### 你的昵称
+  name: chen77
+  ### 个人简介
+  intro: "more learn,more think"
+  ### 外链设置
+  icons:
+    - { class: 'iconfont icon-github-fill', link: 'https://github.com/ccqq0625', tip: 'GitHub' }
+    - { class: 'iconfont icon-gitee-fill', link: 'https://gitee.com/ccqq0625', tip: 'Gitee' }
+    # - { class: 'iconfont icon-csdn-fill', link: 'https://blog.csdn.net/weixin_69117911?spm=1000.2115.3001.5343', tip: 'CSDN' }
+    # - { class: 'iconfont icon-csdn-fill', link: 'https://juejin.cn/user/2714028768233128', tip: '稀土掘金' }
+    - { class: 'iconfont icon-qq-fill', qrcode: '/img/qq.jpg' }
+    # - { class: 'iconfont icon-weixin-fill', qrcode: '你的链接' }
+
+## 友情链接页设置
+links:
+  ### 友情链接页的顶部预览图
+  banner_img: 'https://fluid.s3.bitiful.net/bg/vdysjx.png'
+  items:
+    - {
+      title: 'Hexo完整配置指南',
+      intro: 'WSKH0929 的 CSDN',
+      link: 'https://blog.csdn.net/weixin_51545953/article/details/128499341',
+      avatar: '展示图片链接'
+    }
+    - {
+      title: 'Fluid Docs',
+      intro: 'Fluid 主题使用指南',
+      link: 'https://hexo.fluid-dev.com/docs/',
+      avatar: '/img/favicon.png'
+    }
+  ### 默认头像
+  default_avatar: 你的图片地址/链接
+
+## 标签页设置
+tag:
+  ### 标签页的顶部预览图
+  banner_img: 你的图片地址/链接
+  
+## 分类页设置
+category:
+  ### 分类页的顶部预览图
+  banner_img: 你的图片地址/链接
+  
+## 归档页设置
+archive:
+  ### 归档页的顶部预览图
+  banner_img: 你的图片地址/链接
+
+## 懒加载设置
+lazyload:
+  ### 是否启用懒加载
+  enable: true
+  ### 指定加载时的占位图片
+  # loading_img: /img/loading.gif
+  ### 为 true 时，懒加载仅在文章页生效，如果自定义页面需要使用，可以在 Front-matter (opens new window)里指定
+  onlypost: false
+  ### 触发加载的偏移倍数，基数是视窗高度（即提前 N 屏高度触发加载），可根据部署环境的请求速度调节
+  offset_factor: 2
+ 
+## 全局字体设置
+font:  
+  ### 全局字号
+  font_size: 16px
+  ### 全局字体族
+  font_family: "Microsoft YaHei"
+  ### 代码字号
+  code_font_size: 85%
+  
+## 网页访问统计
+web_analytics: 
+  ### 默认为false，启用网页统计改为true即可
+  enable: true
+  ### 百度统计的Key，参见 https://tongji.baidu.com/sc-web/10000033910/home/site/getjs?siteId=13751376 代码获取中 hm.js? 后边的字符串
+  baidu: 
+  ### Google统计的Tracking ID，参见 https://analytics.google.com/analytics/web/  
+  google:
+  ### 腾讯统计的H5 App id，参见 https://mta.qq.com/h5/manage/ctr_app_manage (开启高级功能才有cid)
+  tencent:
+    sid:
+    cid:
+  ### 51.la站点统计ID，参见 https://www.51.la/user/site/index
+  woyaola:
+  ### 友盟/cnzz站点统计web_id，参见 https://web.umeng.com/main.php?c=site&a=show
+  cnzz:
+  ### LeanCloud 计数统计，可用于 PV UV 展示，如果 web_analytics.enable 没有开启，PV UV 展示只会查询，不会增加
+  leancloud:
+    app_id:
+    app_key:
+    #### REST API 服务器地址，国际版不填
+    server_url:
+
+## 底部栏设置
+footer:
+  ### 统计访问人数设置
+  statistics:
+    #### 是否开启访问人数统计
+    enable: true
+    #### 可选 leancloud | busuanzi  根据自己需求选择
+    source: "busuanzi"
+    #### 显示的文本，{}是数字的占位符（必须包含)，下同
+    pv_format: "总访问量 {} 次"
+    uv_format: "总访客数 {} 人"
+    
+## OpenGraph设置
+open_graph:
+  enable: true
+  twitter_card: summary_large_image
+  twitter_id:
+  twitter_site:
+  google_plus:
+  fb_admins:
+  fb_app_id:
+  
+# ==================================== 首页设置 ====================================
+index:
+  ## 打字机设置
+  slogan:
+    ### 是否启用打字机
+    enable: true
+    ### 打字机文字内容
+    text: 一起学习，一起进步
+  ## 文章跳转方式 _blank：新标签页打开  _self：当前标签页打开
+  post_url_target: _self
+  ## 文章信息设置：可配置隐藏包括发布时间、分类、标签
+  post_meta:
+    date: true
+    category: true
+    tag: true
+    
+# ==================================== 文章页设置 ====================================
+post:
+  ## 统一给文章设置一个默认封面
+  default_index_img: 你的链接
+  ## 日期/字数/阅读时长/阅读数 设置
+  meta:
+    author:  # 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值
+      enable: true
+    date:  # 文章日期，优先根据 front-matter 里 date 字段，其次是 md 文件日期
+      enable: true
+      format: " YYYY 年 MM 月 DD 日 , a hh:mm , dddd"  # 格式参照 ISO-8601 日期格式化
+    wordcount:  # 字数统计
+      enable: true
+      format: "{} 字"  # 显示的文本，{}是数字的占位符（必须包含)，下同
+    min2read:  # 阅读时间
+      enable: true
+      format: "{} 分钟"
+    views:  # 阅读次数
+      enable: false
+      source: "leancloud"  # 统计数据来源，可选：leancloud | busuanzi   注意不蒜子会间歇抽风
+      format: "{} 次"
+  ## 评论设置
+  comments:
+    enable: true
+    type: valine
+
+## valine 评论设置
+valine:
+  appId: 你的appId
+  appKey: 你的appKey
+  serverURLs: 你的serverURLs
+  placeholder: 留言仅限讨论，禁止广告等行为
+
+      
+# ==================================== 代码块设置 ====================================
+code:
+  ## 是否开启复制代码的按钮
+  copy_btn: true
+  ## 高亮设置
+  highlight:
+    ### 是否开启代码高亮
+    enable: true
+    ### 是否开启行号
+    line_number: true
+    ### 选择生成高亮的库，可选项: highlightjs、prismjs，对应下面两组配置，高亮的配置说明具体见主题配置中的注释
+    lib: "highlightjs"
+    highlightjs:
+      style: 'Github Gist'
+      bg_color: false
+    prismjs:
+      style: "default"
+      preprocess: true
