@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 小陈的笔记本
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: 小陈
 language: zh-CN
 timezone: ''
 
@@ -101,4 +101,7 @@ theme: fluid
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@chen77.top:/ccqq0625/chen77-hexo-myblog #用户名@服务器Ip:git仓库位置
+  branch: main
+

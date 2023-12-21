@@ -1,7 +1,7 @@
 # ==================================== 全局设置 ====================================
 
 ## 顶部预览大图（不知道为什么，设置这个属性貌似没起到作用）
-# banner_img: 你的图片地址/链接
+banner_img: /img/banners/6.jpg
 
 ## Hexo的网页图标
 favicon: /img/icon.png
@@ -10,24 +10,24 @@ favicon: /img/icon.png
 force_https: true
 
 ## 自定义JS
-# custom_js:
-#   ### 鼠标点击出小爱心❤
-#   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/love.js
-#   ### 鼠标跟随小星星
-#   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiaoxingxing.js
-#   ### 小雪花飘落
-#   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiaoxuehua.js
-#   ### 动态彩带
-#   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/caidai.js
+custom_js:
+  ### 鼠标点击出小爱心❤
+  # - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/love.js
+  ### 鼠标跟随小星星
+  - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiaoxingxing.js
+  ### 小雪花飘落
+  # - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiaoxuehua.js
+  ### 动态彩带
+  # - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/caidai.js
 
 ## 自定义CSS
-# custom_css: 
+custom_css: 
 #   ### 引入 iconfont 的图标（这是我的iconfont项目链接，最好可以换成你自己的）
 #   - //at.alicdn.com/t/c/font_3846514_kabxni94auf.css
-#   ### 鼠标指针美化
-#   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css
-#   ### 滚动条美化
-#   - //cdn.jsdelivr.net/gh/bynotes/texiao/source/css/gundongtiao.css
+  ### 鼠标指针美化
+  - //cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css
+  ### 滚动条美化
+  - //cdn.jsdelivr.net/gh/bynotes/texiao/source/css/gundongtiao.css
 
 ## 暗黑模式设置
 dark_mode:
@@ -37,7 +37,7 @@ dark_mode:
 ## 导航栏设置
 navbar:
   ### 博客标题
-  blog_title: chen77 的博客
+  blog_title: 小陈的笔记本
   ### 导航菜单
   menu:
     - { key: '首页', link: '/', icon: 'iconfont icon-home-fill' }
@@ -59,13 +59,13 @@ navbar:
 ## 关于页设置
 about:
   ## 关于页的顶部预览图
-  banner_img: 你的图片地址/链接
+  banner_img: /img/banners/1.jpg
   ### 你的头像
   avatar: /img/icon.png
   ### 你的昵称
   name: chen77
   ### 个人简介
-  intro: "more learn,more think"
+  intro: "珍惜当下"
   ### 外链设置
   icons:
     - { class: 'iconfont icon-github-fill', link: 'https://github.com/ccqq0625', tip: 'GitHub' }
@@ -97,18 +97,18 @@ links:
 
 ## 标签页设置
 tag:
-  ### 标签页的顶部预览图
-  banner_img: 你的图片地址/链接
+  ## 关于页的顶部预览图
+  banner_img: /img/banners/2.jpg
   
 ## 分类页设置
 category:
   ### 分类页的顶部预览图
-  banner_img: 你的图片地址/链接
+  banner_img: /img/banners/3.jpg
   
 ## 归档页设置
 archive:
   ### 归档页的顶部预览图
-  banner_img: 你的图片地址/链接
+  banner_img: /img/banners/4.jpg
 
 ## 懒加载设置
 lazyload:
@@ -164,6 +164,11 @@ footer:
     #### 显示的文本，{}是数字的占位符（必须包含)，下同
     pv_format: "总访问量 {} 次"
     uv_format: "总访客数 {} 人"
+  beian:
+    enable: true
+    icp_text: 鄂ICP备2023029096号-1 #ICP备案号
+    police_text: #公安备案号
+  
     
 ## OpenGraph设置
 open_graph:
@@ -177,12 +182,13 @@ open_graph:
   
 # ==================================== 首页设置 ====================================
 index:
+  banner_img: /img/banners/6.jpg
   ## 打字机设置
   slogan:
     ### 是否启用打字机
     enable: true
     ### 打字机文字内容
-    text: 一起学习，一起进步
+    text: 最好的时光便是现在
   ## 文章跳转方式 _blank：新标签页打开  _self：当前标签页打开
   post_url_target: _self
   ## 文章信息设置：可配置隐藏包括发布时间、分类、标签
@@ -194,7 +200,7 @@ index:
 # ==================================== 文章页设置 ====================================
 post:
   ## 统一给文章设置一个默认封面
-  default_index_img: 你的链接
+  default_index_img: /img/post/1.jpg
   ## 日期/字数/阅读时长/阅读数 设置
   meta:
     author:  # 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值
