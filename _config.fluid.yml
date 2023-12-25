@@ -215,6 +215,13 @@ index:
 post:
   ## 统一给文章设置一个默认封面
   default_index_img: /img/post/1.jpg
+  # 公式
+  math:
+    enable: true
+    # 建议开启。当为 true 时，只有在文章 front-matter (opens new window)里指定 math: true 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度。
+    specific: false
+    # 公式引擎
+    engine: katex
   ## 日期/字数/阅读时长/阅读数 设置
   meta:
     author:  # 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值

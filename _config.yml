@@ -105,3 +105,7 @@ deploy:
   repo: git@chen77.top:/ccqq0625/chen77-hexo-myblog #用户名@服务器Ip:git仓库位置
   branch: main
 
+# 
+markdown:
+  plugins:
+    - "@traptitech/markdown-it-katex"
