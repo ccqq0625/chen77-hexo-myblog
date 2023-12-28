@@ -1,13 +1,13 @@
 ---
-title: 微前端qiankun的使用——vue2版
-excerpt: 微前端qiankun的使用——vue2版
+title: 微前端qiankun的使用—vue2版
+excerpt: 微前端qiankun的使用—vue2版
 categories:
   - 微前端
 tags:
   - qiankun
 date: 2023-12-28 16:59
 ---
-# 微前端qiankun的使用——vue2版
+# 微前端qiankun的使用—vue2版
 
 ## 一、微前端
 
@@ -61,7 +61,7 @@ vue create test-b
 ```
 
 2. 搭建主应用基本框架：在test-a中下载element UI并应用，再使用layout布局搭建最基本的系统结构
-![](../img/qiankuun/4.png)
+![](https://ooo.0x0.ooo/2023/12/28/OKVi4F.png)
 
 实现形如这样的样式，就是一个常见的最基本的主应用结构了，注意此时主应用的运行地址是http://localhost:8080，**要注意主，子应用的地址不能相同**
 
@@ -73,7 +73,7 @@ npm install qiankun
 
 4. 在主应用test-a的入口文件main.js中，定义子应用的入口
 
-![](../img/qiankuun/3.png)
+![](https://ooo.0x0.ooo/2023/12/28/OKVn26.png)
 
 ```js
 // qiankun
@@ -98,7 +98,7 @@ start();
 
 例如：
 
-![](../img/qiankuun/2.png)
+![](https://ooo.0x0.ooo/2023/12/28/OKV7bP.png)
 
 6. 在主应用的路由中设置与子应用对应的路由，但是主应用中与子路由相关的路由必须要一个标识（对应入口文件中定义的【activeRule】）
 
@@ -108,7 +108,7 @@ start();
 
 7. 设置子应用的服务路由
 
-![](../img/qiankuun/5.png)
+![](https://ooo.0x0.ooo/2023/12/28/OKVNmb.png)
 
 ```js
 devServer: {
@@ -124,7 +124,7 @@ devServer: {
 
 8. 在子应用中配置打包
 
-![](../img/qiankuun/6.png)
+![](https://ooo.0x0.ooo/2023/12/28/OKVeVl.png)
 
 ```js
  // 配置打包！！！！
@@ -138,7 +138,7 @@ devServer: {
 
 9. 在子应用中的new [VueRouter](https://so.csdn.net/so/search?q=VueRouter&spm=1001.2101.3001.7020)的base要进行是否是qiankun的判断，加 “/childApp”（与主应用【activeRule】对应） , 是因为主应用要通过这个来进行激活规则
 
-![](../img/qiankuun/77.png)
+![](https://ooo.0x0.ooo/2023/12/28/OKVAqg.png)
 
 ```js
 const router = new VueRouter({
@@ -151,7 +151,7 @@ const router = new VueRouter({
 
 10. 在子应用的入口文件main.js中添加qiankun生命周期函数
 
-![](../img/qiankuun/8.png)
+![](https://ooo.0x0.ooo/2023/12/28/OKVKAB.png)
 
 ```js
 if(window.__POWERED_BY_QIANKUN__){
@@ -191,7 +191,7 @@ export async function update(props){
 
 11. *__webpack_public_path__*可能会报错，需要在package.json中添加全局配置
 
-![](../img/qiankuun/9.png)
+![](https://ooo.0x0.ooo/2023/12/28/OKVZQs.png)
 
 ```json
  "globals": {
@@ -201,4 +201,4 @@ export async function update(props){
 
 12. 在主应用菜单中配置对应的路由，进行使用
 
-![](../img/qiankuun/10.png)
+![](https://ooo.0x0.ooo/2023/12/28/OKVvCK.png)
