@@ -104,11 +104,11 @@ start();
 
 例如：
 
-![](../img/qiankuun/1.png)
+![](https://ooo.0x0.ooo/2023/12/28/OKVNmb.png)
 
 7. 设置子应用的服务路由
 
-![](https://ooo.0x0.ooo/2023/12/28/OKVNmb.png)
+![](https://ooo.0x0.ooo/2023/12/29/OKV8DD.png)
 
 ```js
 devServer: {
