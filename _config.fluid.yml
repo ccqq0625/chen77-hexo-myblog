@@ -250,8 +250,14 @@ valine:
   appId: eOesfYHJW2RVAWcIwm41e9Vl-gzGzoHsz #你的appId
   appKey: 25VMDOt8Px3ygjCfK5rXYfif #你的appKey
   notify: true #邮箱通知
+  path: window.location.pathname # 当前文章页路径，用于区分不同的文章页，以保证正确读取该文章页下的评论列表
   avator: monsterid #头像风格
-  serverURLs: 你的serverURLs
+  meta: ['nick', 'mail', 'link']  # 评论者相关属性
+  pageSize: 10 # 评论列表分页，每页条数
+  lang: zh-CN # zh-CN | zh-TW | en | ja
+  highlight: false # 代码高亮
+  recordIP: true # 是否记录评论者IP
+  serverURLs:  # REST API 服务器地址，国际版不填
   placeholder: 留言仅限讨论，禁止广告等行为
 
       
