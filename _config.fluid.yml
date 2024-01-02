@@ -246,8 +246,11 @@ post:
 
 ## valine 评论设置
 valine:
-  appId: 你的appId
-  appKey: 你的appKey
+  enable: true
+  appId: eOesfYHJW2RVAWcIwm41e9Vl-gzGzoHsz #你的appId
+  appKey: 25VMDOt8Px3ygjCfK5rXYfif #你的appKey
+  notify: true #邮箱通知
+  avator: monsterid #头像风格
   serverURLs: 你的serverURLs
   placeholder: 留言仅限讨论，禁止广告等行为
 
