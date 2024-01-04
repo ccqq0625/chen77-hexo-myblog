@@ -41,7 +41,13 @@ navbar:
     - { key: '归档', link: '/archives', icon: 'iconfont icon-books' }
     - { key: '分类', link: '/categories', icon: 'iconfont icon-th-large'}
     - { key: '标签', link: '/tags/', icon: 'iconfont icon-tags-fill'}
-    - { key: '关于', link: '/about/', icon: 'iconfont icon-user-fill'}
+    - {
+      key: '工具',
+      icon: 'iconfont icon-docker',
+      submenu: [
+        { key: 'portainer可视化', link: 'http://portainer.chen77.top/' },
+      ]
+    }
     - { key: '友链', link: '/links/', icon: 'iconfont icon-link-fill' }
     - {
       key: '文档',
