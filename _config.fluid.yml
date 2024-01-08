@@ -48,6 +48,7 @@ navbar:
         { key: 'portainer可视化', link: 'http://portainer.chen77.top/' },
       ]
     }
+    - { key: '关于', link: '/about/', icon: 'iconfont icon-user-fill'}
     - { key: '友链', link: '/links/', icon: 'iconfont icon-link-fill' }
     - {
       key: '文档',
@@ -93,6 +94,12 @@ links:
       title: 'Fluid Docs',
       intro: 'Fluid 主题使用指南',
       link: 'https://hexo.fluid-dev.com/docs/',
+      avatar: '/img/favicon.png'
+    }
+    - {
+      title: 'lrw的网站',
+      intro: 'lrw的网站',
+      link: 'https://lrwjz.cn/',
       avatar: '/img/favicon.png'
     }
   ### 默认头像
