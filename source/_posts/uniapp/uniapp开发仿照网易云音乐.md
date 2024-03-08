@@ -555,7 +555,7 @@ Item.id是当前歌曲的id：
 
 设置变量：
 
-![设置变量设置变量](C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240308180747732.png)
+![设置变量设置变量](https://ooo.0x0.ooo/2024/03/08/Oy9wpK.png)
 
 样式：
 
