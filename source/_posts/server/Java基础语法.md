@@ -10,7 +10,6 @@ tags:
   - Java
 math: true
 ---
-# day02 - Java基础语法
 
 ## 1. 注释
 
