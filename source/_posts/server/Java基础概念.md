@@ -1,4 +1,3 @@
-
 ---
 title: Java基础概念
 date: 2024-04-23 17:23:46
@@ -8,6 +7,7 @@ categories:
   - 后端
 tags:
   - Java
+index_img: /img/流程控制语句/java.png
 math: true
 ---
 
