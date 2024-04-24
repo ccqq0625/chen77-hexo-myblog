@@ -1,6 +1,6 @@
 
 ---
-title: Java基础语法
+title: Java基础概念
 date: 2024-04-23 17:23:46
 updated: 2024-04-23 17:23:46
 excerpt: 黑马java开发学习资料day02
@@ -22,7 +22,6 @@ Java中的注释分为三种：
 ~~~java
 // 这是单行注释文字
 ~~~
-a
 * 多行注释：
 
 ~~~java
